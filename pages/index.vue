@@ -4,6 +4,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  layout: "empty"
+};
+</script>
+
 <style scoped>
 .container {
   /* font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
@@ -16,6 +22,9 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: black;
+  /* background-color: black; */
+}
+.logo {
+  color: white;
 }
 </style>

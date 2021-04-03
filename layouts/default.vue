@@ -1,20 +1,26 @@
 <template>
   <div>
-    <Nuxt />
+    <Navbar></Navbar>
+    <div class="navs">
+      <Sidebar v-if="$nuxt._route.fullPath === '/home/documentation'"></Sidebar>
+      <Nuxt />
+    </div>
   </div>
 </template>
 
+<script>
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+export default {
+  // components: Navbar,
+  // Sidebar
+};
+</script>
+
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -23,7 +29,13 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+.navs {
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+/*
 *,
 *::before,
 *::after {
@@ -58,5 +70,5 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
+} */
 </style>

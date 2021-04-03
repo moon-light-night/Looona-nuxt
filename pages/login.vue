@@ -23,6 +23,12 @@
   </section>
 </template>
 
+<script>
+export default {
+  layout: "empty"
+};
+</script>
+
 <style>
 .login-registration {
   position: absolute;
@@ -31,7 +37,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: black;
+  /* background-color: black; */
 }
 .login-registration-container__wrap {
   position: relative;
